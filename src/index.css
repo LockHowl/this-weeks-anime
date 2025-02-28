@@ -1,9 +1,13 @@
 /* src/index.css */
 @import 'tailwindcss';
 
-@theme {
-  /* Custom theme configurations can go here */
-  --color-primary: #1da1f2;
-  --font-sans: 'Helvetica Neue', Arial, sans-serif;
-  /* Add more customizations as needed */
-}
+:root {
+    --color-primary: #1da1f2;
+    --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  /* Optional: Apply variables to Tailwind classes */
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-primary);
+  }
